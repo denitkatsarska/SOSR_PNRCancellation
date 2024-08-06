@@ -136,7 +136,7 @@
       <AssemblyReference>UiPath.DataService.Definition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Actions for cancelling a booking that has no deposit payed" DisplayName="xRez_CancelBooking" sap:VirtualizedContainerService.HintSize="1230,11065" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Actions for cancelling a booking that has no deposit payed" DisplayName="xRez_CancelBooking" sap:VirtualizedContainerService.HintSize="1246,9342" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Double" Name="dblTotalBalanceDue" />
       <Variable x:TypeArguments="x:String" Name="strCurrency" />
@@ -156,8 +156,8 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message - cancel booking begins" sap:VirtualizedContainerService.HintSize="1168,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Begin actions for Cancelling the booking with PNR &quot; + in_TransactionItem.SpecificContent(&quot;PNR&quot;).ToString]" />
-    <bb:XREZ___Booking_Page___Click_Add_Remarks DisplayName="XREZ - Booking Page - Click Add Remarks (Cancel booking)" sap:VirtualizedContainerService.HintSize="1168,141" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Click_Add_Remarks_1" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]">
+    <ui:LogMessage DisplayName="Log Message - cancel booking begins" sap:VirtualizedContainerService.HintSize="1184,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Begin actions for Cancelling the booking with PNR &quot; + in_TransactionItem.SpecificContent(&quot;PNR&quot;).ToString]" />
+    <bb:XREZ___Booking_Page___Click_Add_Remarks DisplayName="XREZ - Booking Page - Click Add Remarks (Cancel booking)" sap:VirtualizedContainerService.HintSize="1184,141" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Click_Add_Remarks_1" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -165,7 +165,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </bb:XREZ___Booking_Page___Click_Add_Remarks>
-    <bb:XREZ___Booking_Page___Add_Remark sap2010:Annotation.AnnotationText="Remark to be added: UAT testing. Canceled." DisplayName="XREZ - Booking Page - Add Remark (Cancel booking)" sap:VirtualizedContainerService.HintSize="1168,94" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Add_Remark_1" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" in_StrRemark="[in_dictConfig(&quot;strCancelRemarkText&quot;).ToString]" in_StrRemarkCode="[in_dictConfig(&quot;strCancelRemarkCode&quot;).ToString]">
+    <bb:XREZ___Booking_Page___Add_Remark sap2010:Annotation.AnnotationText="Remark to be added: UAT testing. Canceled." DisplayName="XREZ - Booking Page - Add Remark (Cancel booking)" sap:VirtualizedContainerService.HintSize="1184,94" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Add_Remark_1" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" in_StrRemark="[in_dictConfig(&quot;strCancelRemarkText&quot;).ToString]" in_StrRemarkCode="[in_dictConfig(&quot;strCancelRemarkCode&quot;).ToString]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -174,7 +174,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </bb:XREZ___Booking_Page___Add_Remark>
-    <ui:LogMessage DisplayName="Log Message - cancel remark added" sap:VirtualizedContainerService.HintSize="1168,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Remark has been added&quot;]">
+    <ui:LogMessage DisplayName="Log Message - cancel remark added" sap:VirtualizedContainerService.HintSize="1184,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Remark has been added&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -182,7 +182,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:LogMessage DisplayName="Log Message - Cancelling the booking" sap:VirtualizedContainerService.HintSize="1168,141" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Click Cancel button...&quot;]">
+    <ui:LogMessage DisplayName="Log Message - Cancelling the booking" sap:VirtualizedContainerService.HintSize="1184,141" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Click Cancel button...&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -190,7 +190,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Due to missing/not working library for clicking on Cancel button, adding the steps" AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Application/Browser - xRez for cancelling the booking" sap:VirtualizedContainerService.HintSize="1168,637" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_uiXRezBrowser]" OpenMode="Never" ScopeGuid="71201a8f-b9dc-48e2-99e4-fe3a1f35f1a0" Version="V2">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Due to missing/not working library for clicking on Cancel button, adding the steps" AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Application/Browser - xRez for cancelling the booking" sap:VirtualizedContainerService.HintSize="1184,637" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_uiXRezBrowser]" OpenMode="Never" ScopeGuid="71201a8f-b9dc-48e2-99e4-fe3a1f35f1a0" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -226,8 +226,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Message - extracting payment due" sap:VirtualizedContainerService.HintSize="1168,141" sap2010:WorkflowViewState.IdRef="LogMessage_56" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Extracting Payment Due from Booking Details page.&quot;]" />
-    <bb:XREZ___Booking_Page___Extract_Payment_and_Refund_Due sap2010:Annotation.AnnotationText="Extracting Payment Due from Pricing section in Booking Details page" DisplayName="Booking Page - Extract Payment and Refund Due" sap:VirtualizedContainerService.HintSize="1168,109" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Extract_Payment_and_Refund_Due_7" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" io_StrFoundDueCurrency="[strDueCurrency]" out_DblFoundDue="[dblPricingPaymentDue]">
+    <ui:LogMessage DisplayName="Log Message - extracting payment due" sap:VirtualizedContainerService.HintSize="1184,141" sap2010:WorkflowViewState.IdRef="LogMessage_56" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Extracting Payment Due from Booking Details page.&quot;]" />
+    <bb:XREZ___Booking_Page___Extract_Payment_and_Refund_Due sap2010:Annotation.AnnotationText="Extracting Payment Due from Pricing section in Booking Details page" DisplayName="Booking Page - Extract Payment and Refund Due" sap:VirtualizedContainerService.HintSize="1184,109" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Extract_Payment_and_Refund_Due_7" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" io_StrFoundDueCurrency="[strDueCurrency]" out_DblFoundDue="[dblPricingPaymentDue]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -236,7 +236,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </bb:XREZ___Booking_Page___Extract_Payment_and_Refund_Due>
-    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[dblPricingPaymentDue &gt; 0]" DisplayName="While there is Payment due that needs to be removed" sap:VirtualizedContainerService.HintSize="1168,662" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2" MaxIterations="5">
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[dblPricingPaymentDue &gt; 0]" DisplayName="While there is Payment due that needs to be removed" sap:VirtualizedContainerService.HintSize="1184,662" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2" MaxIterations="5">
       <ui:InterruptibleWhile.Body>
         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,526" sap2010:WorkflowViewState.IdRef="Sequence_42">
           <sap:WorkflowViewStateService.ViewState>
@@ -264,7 +264,7 @@
         </Sequence>
       </ui:InterruptibleWhile.Body>
     </ui:InterruptibleWhile>
-    <ui:LogMessage DisplayName="Log Message - Payment due is 0, override needs to be done again" sap:VirtualizedContainerService.HintSize="1168,141" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Payment due is 0, continuing with the process...&quot;]">
+    <ui:LogMessage DisplayName="Log Message - Payment due is 0, override needs to be done again" sap:VirtualizedContainerService.HintSize="1184,141" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Payment due is 0, continuing with the process...&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -272,7 +272,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <bb:XREZ___Booking_Page___Click_Commit in_DblTimeoutL="{x:Null}" in_DblTimeoutM="{x:Null}" DisplayName="Booking Page - Click Commit (cancellation)" sap:VirtualizedContainerService.HintSize="1168,243" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Click_Commit_3" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeoutS="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]">
+    <bb:XREZ___Booking_Page___Click_Commit in_DblTimeoutL="{x:Null}" in_DblTimeoutM="{x:Null}" DisplayName="Booking Page - Click Commit (cancellation)" sap:VirtualizedContainerService.HintSize="1184,243" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Click_Commit_3" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeoutS="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -281,16 +281,16 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </bb:XREZ___Booking_Page___Click_Commit>
-    <uix:NCheckState sap2010:Annotation.AnnotationText="Check if the process landed on Queue Allocation page. &#xA;- If Yes: check if any of the ‘On Queue’ fields read “Manual_Ticket” or “BAH_On Request” or &quot;Manual_Reissue&quot;, then tick the ‘Delete from queue’ radio button against each of these queues. Then Commit  &#xA;- If No: Red path: If Booking Details page is displayed, click Ignore button, add respective PNR Remarks and place to the correct queue" DisplayName="Check if the process landed on Queue Alloxation page" sap:VirtualizedContainerService.HintSize="1168,7711" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
+    <uix:NCheckState sap2010:Annotation.AnnotationText="Check if the process landed on Queue Allocation page. &#xA;- If Yes: check if any of the ‘On Queue’ fields read “Manual_Ticket” or “BAH_On Request” or &quot;Manual_Reissue&quot;, then tick the ‘Delete from queue’ radio button against each of these queues. Then Commit  &#xA;- If No: Red path: If Booking Details page is displayed, click Ignore button, add respective PNR Remarks and place to the correct queue" DisplayName="Check if the process landed on Queue Alloxation page" sap:VirtualizedContainerService.HintSize="1184,5988" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
       <uix:NCheckState.IfExists>
-        <Sequence DisplayName="Target appears  - landed on Queue Allocation page" sap:VirtualizedContainerService.HintSize="664,7437" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Target appears  - landed on Queue Allocation page" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="boolIsCancelled" />
             <Variable x:TypeArguments="x:Boolean" Name="boolHotelLive" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -776,13 +776,13 @@
         </Sequence>
       </uix:NCheckState.IfExists>
       <uix:NCheckState.IfNotExists>
-        <Sequence DisplayName="RED PATH - Target does not appear - landed on Booking Page" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence DisplayName="RED PATH - Target does not appear - landed on Booking Page" sap:VirtualizedContainerService.HintSize="680,5714" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="boolIsBookingPage" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -799,9 +799,9 @@
               </ui:Target>
             </ui:UiElementExists.Target>
           </ui:UiElementExists>
-          <If Condition="[boolIsBookingPage]" DisplayName="RED PATH - If booking page is displayed" sap:VirtualizedContainerService.HintSize="618,6051" sap2010:WorkflowViewState.IdRef="If_6">
+          <If Condition="[boolIsBookingPage]" DisplayName="RED PATH - If booking page is displayed" sap:VirtualizedContainerService.HintSize="618,5269" sap2010:WorkflowViewState.IdRef="If_6">
             <If.Then>
-              <Sequence sap:VirtualizedContainerService.HintSize="584,5638" sap2010:WorkflowViewState.IdRef="Sequence_25">
+              <Sequence sap:VirtualizedContainerService.HintSize="584,4856" sap2010:WorkflowViewState.IdRef="Sequence_25">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="bool_BtnIgnore" />
                 </Sequence.Variables>
@@ -881,7 +881,7 @@
                   <bb:XREZ___Booking_Page___Save_Remarks DisplayName="RED PATH - Booking Page - Save Remarks (ATTN WNS remark)" sap:VirtualizedContainerService.HintSize="480,141" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Save_Remarks_1" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" />
                   <ui:LogMessage DisplayName="Log Message - Failed cancellation remark added" sap:VirtualizedContainerService.HintSize="480,143" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Remark added successfully&quot;]" />
                 </Sequence>
-                <Sequence DisplayName="RED PATH - Adding &quot;Cancellation in Fly&quot; Remark " sap:VirtualizedContainerService.HintSize="542,1444" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                <Sequence DisplayName="RED PATH - Adding &quot;Cancellation in Fly&quot; Remark " sap:VirtualizedContainerService.HintSize="542,1334" sap2010:WorkflowViewState.IdRef="Sequence_29">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -891,14 +891,16 @@
                   <ui:LogMessage DisplayName="Log Message - adding cancel in fly due to failure remark" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Adding &quot; + in_dictConfig(&quot;BAH_SOSR_FlyCancellationRedPath_RemarkCodeAndText&quot;).ToString.Split(&quot;|&quot;c)(1) + &quot; remark&quot;]" />
                   <bb:XREZ___Booking_Page___Open_SPNR_Remarks DisplayName="RED PATH - Booking Page - Open SPNR Remarks (Error message)" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Open_SPNR_Remarks_2" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" />
                   <bb:XREZ___Booking_Page___Click_Add_Remarks DisplayName="RED PATH - Booking Page - Click Add Remarks (Error message)" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Click_Add_Remarks_3" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" />
-                  <bb:XREZ___Booking_Page___Type_Into_Remark sap2010:Annotation.AnnotationText="Remark is: AUTOMATION / BOOKING ATTEMPTED TO BE CANCELLED AS NOT PAID WITHIN 4 HOUR DEADLINE, HOWEVER RECEIVED ERROR MESSAGE AND UNABLE TO COMMIT. THE PNR HAS BEEN CANCELLED DIRECTLY IN FLY AND THE GROUND PASSED TO WNS TO PROCESS" DisplayName="RED PATH - Booking Page - Type Into Remark (Error message)" sap:VirtualizedContainerService.HintSize="388,294" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Type_Into_Remark_2" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" in_StrRemarkToAdd="[in_dictConfig(&quot;BAH_SOSR_FlyCancellationRedPath_RemarkCodeAndText&quot;).ToString.Split(&quot;|&quot;c)(1)]">
+                  <bb:XREZ___Booking_Page___Type_Into_Remark sap2010:Annotation.AnnotationText="Remark is: UAT - AUTOMATION / BOOKING ATTEMPTED TO BE CANCELLED, HOWEVER RECEIVED ERROR MESSAGE AND UNABLE TO COMMIT. THE GROUND PASSED TO WNS TO PROCESS" DisplayName="RED PATH - Booking Page - Type Into Remark (Error message)" sap:VirtualizedContainerService.HintSize="388,184" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Type_Into_Remark_2" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" in_StrRemarkToAdd="[in_dictConfig(&quot;strRedPathRemarkText&quot;).ToString]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </bb:XREZ___Booking_Page___Type_Into_Remark>
-                  <bb:XREZ___Booking_Page___Select_Remark_Type DisplayName="RED PATH - Booking Page - Select Remark Type (Error message)" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Select_Remark_Type_2" in_StrRemarkTypeInDropdown="[in_dictConfig(&quot;BAH_SOSR_FlyCancellationRedPath_RemarkCodeAndText&quot;).ToString.Split(&quot;|&quot;c)(0)]" />
+                  <bb:XREZ___Booking_Page___Select_Remark_Type DisplayName="RED PATH - Booking Page - Select Remark Type (Error message)" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Select_Remark_Type_2" in_StrRemarkTypeInDropdown="[in_dictConfig(&quot;strCancelRemarkCode&quot;).ToString]" />
                   <bb:XREZ___Booking_Page___Save_Remarks DisplayName="RED PATH- Booking Page - Save Remarks (Error message)" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Save_Remarks_2" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" />
                   <ui:LogMessage DisplayName="RED PATH - Log Message - error remark added" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Remark added successfully&quot;]" />
                 </Sequence>
@@ -921,23 +923,6 @@
                 </bq:XREZ___Queue_Allocation_Page___Select_Queue_To_Add>
                 <bq:XREZ___Queue_Allocation_Page___Click_Add in_DblTimeoutL="{x:Null}" in_DblTimeoutM="{x:Null}" DisplayName="RED PATH - Booking Cancellation - Queue Allocation Page - Click Add" sap:VirtualizedContainerService.HintSize="542,243" sap2010:WorkflowViewState.IdRef="XREZ___Queue_Allocation_Page___Click_Add_1" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeoutS="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" />
                 <bq:XREZ___Queue_Allocation_Page___Click_Commit in_DblTimeoutL="{x:Null}" in_DblTimeoutM="{x:Null}" DisplayName="RED PATH - Booking Cancellation - Queue Allocation Page - Click Commit" sap:VirtualizedContainerService.HintSize="542,243" sap2010:WorkflowViewState.IdRef="XREZ___Queue_Allocation_Page___Click_Commit_2" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeoutS="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" />
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FLY_LoginAndNavigation - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="542,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Business Worfklows\Processing_FLY\FLY_LoginAndNavigation.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_dictConfig">[in_dictConfig]</InArgument>
-                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_drTransactionItem">[in_TransactionItem]</InArgument>
-                    <OutArgument x:TypeArguments="x:String" x:Key="out_strFLYExtractedText">[strFLYExtractedText]</OutArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FLY_Cancellation_Process - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="542,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Business Worfklows\Processing_FLY\FLY_Cancellation_Process.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_strFLYExtractedText">[strFLYExtractedText]</InArgument>
-                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_drTransactionItem">[in_TransactionItem]</InArgument>
-                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_dictConfig">[in_dictConfig]</InArgument>
-                    <InArgument x:TypeArguments="ui:UiElement" x:Key="in_uiXRezBrowser">[in_uiXRezBrowser]</InArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-                <ui:LogMessage DisplayName="Log Message - Red Path actions - Update DS entity" sap:VirtualizedContainerService.HintSize="542,143" sap2010:WorkflowViewState.IdRef="LogMessage_53" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Updating Data Service with Cancelled status&quot;]" />
-                <ui:LogMessage DisplayName="Log Message - red path actions done" sap:VirtualizedContainerService.HintSize="542,143" sap2010:WorkflowViewState.IdRef="LogMessage_35" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Booking Cancellation actions are done. Moving on to cancelling in Fly...&quot;]" />
               </Sequence>
             </If.Then>
             <If.Else>
@@ -964,6 +949,6 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NCheckState>
-    <ui:LogMessage DisplayName="Log Message - Booking cancelled" sap:VirtualizedContainerService.HintSize="1168,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Booking has been cancelled&quot;]" />
+    <ui:LogMessage DisplayName="Log Message - Booking cancelled" sap:VirtualizedContainerService.HintSize="1184,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Booking has been cancelled&quot;]" />
   </Sequence>
 </Activity>
