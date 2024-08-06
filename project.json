@@ -6,16 +6,24 @@
   "dependencies": {
     "British.Airways.FLY_Windows": "[4.0.18.2]",
     "British.Airways.xREZAgent_Windows": "[1.0.51.5]",
+    "UiPath.DataService.Activities": "[24.7.1]",
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.System.Activities": "[23.10.3]",
     "UiPath.Testing.Activities": "[23.10.1]",
     "UiPath.UIAutomation.Activities": "[23.10.7]"
   },
   "webServices": [],
-  "entitiesStores": [],
+  "entitiesStores": [
+    {
+      "serviceDocument": ".entities/EntitiesStore.json",
+      "tenantName": "IAG_Production",
+      "namespace": "SOSR_PNRCancellation",
+      "uniqueReference": "TnWhw+pfNRu9Dh2+L0fY3UIA+y0xvRZ0gGTuzH55LgE="
+    }
+  ],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.2.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
