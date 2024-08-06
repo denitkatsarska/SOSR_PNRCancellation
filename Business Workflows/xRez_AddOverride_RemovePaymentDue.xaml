@@ -1,0 +1,231 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="xRez_AddOverride_RemovePaymentDue" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ba="clr-namespace:British_Airways_xREZAgent_Windows.Agent_Override_Page;assembly=British Airways.xREZAgent_Windows" xmlns:bb="clr-namespace:British_Airways_xREZAgent_Windows.Booking_Page;assembly=British Airways.xREZAgent_Windows" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_dictConfig" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_dblPaymentDue" Type="InArgument(x:Double)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>970,2695</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>xRez_AddOverride_RemovePaymentDue_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>British_Airways_xREZAgent_Windows.Booking_Page</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>British_Airways_xREZAgent_Windows.Agent_Override_Page</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>British Airways.xREZAgent_Windows</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Activities.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Whenever a PaymentDue is present in Booking Page, activities for removing it should be invoked.&#xA;In this workflow, the process will check Total Balance Due (which eq Booking Details-Payment due), and override that amount by choosing Adjustment type, Reason, Reason code and Component." DisplayName="xRez_AddOverride_RemovePaymentDue" sap:VirtualizedContainerService.HintSize="496,2510" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strAdjustmentType" />
+      <Variable x:TypeArguments="x:String" Name="strCancellationReason" />
+      <Variable x:TypeArguments="x:String" Name="strCancellationComponent" />
+      <Variable x:TypeArguments="x:String" Name="strReasonCode" />
+      <Variable x:TypeArguments="x:Double" Name="dblTotalBalanceDue" />
+      <Variable x:TypeArguments="x:String" Name="strCurrency" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message - Begin Agent Override process to remove Payment due" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Begin 'Add override to remove payment due' process in Agent Override section...&quot;]" />
+    <bb:XREZ___Booking_Page___Navigate_To_Agent_Override DisplayName="Remove Payment due - Navigate To Agent Override" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="XREZ___Booking_Page___Navigate_To_Agent_Override_1" />
+    <ui:LogMessage DisplayName="Log Message - Remove payment due - extracting balance due" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Extracting balance due amount...&quot;]" />
+    <ui:RetryScope sap2010:Annotation.AnnotationText="ContinueOnError = Yes, because even if it fails, the process can skip this part and use the extracted Payment Due from Booking Details Page" ContinueOnError="True" DisplayName="Retry extracting total balance due" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="RetryScope_2">
+      <ui:RetryScope.ActivityBody>
+        <ActivityAction>
+          <Sequence DisplayName="Extract total balance due" sap:VirtualizedContainerService.HintSize="450,354" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ba:XREZ___Agent_Override_Page___Extract_Total_Balance_Due DisplayName="Agent Override - Extract Total Balance Due  (Remove payment due)" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="XREZ___Agent_Override_Page___Extract_Total_Balance_Due_2" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" io_StrTotalBalanceDueCurrency="[strCurrency]" out_DblTotalBalanceDue="[dblTotalBalanceDue]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:RetryScope.ActivityBody>
+      <ui:RetryScope.Condition>
+        <ActivityFunc x:TypeArguments="x:Boolean" />
+      </ui:RetryScope.Condition>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:RetryScope>
+    <ui:MultipleAssign sap2010:Annotation.AnnotationText="Asset &quot;BAH_SOSR_AgentOverride_BookingCancellationDetails&quot; holds the cancellation details in the folowing format, separeted by &quot;|&quot;:&#xA;strAdjustmentType|strCancellationReason|strCancellationComponent|strReasonCode" DisplayName="Multiple Assign - Cancellation Details for removing payment due" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strAdjustmentType]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[in_dictConfig("BAH_SOSR_AgentOverride_BookingCancellationDetails").ToString.Split("|"c)(0)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strCancellationReason]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[in_dictConfig("BAH_SOSR_AgentOverride_BookingCancellationDetails").ToString.Split("|"c)(1)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strCancellationComponent]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[in_dictConfig("BAH_SOSR_AgentOverride_BookingCancellationDetails").ToString.Split("|"c)(2)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strReasonCode]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[in_dictConfig("BAH_SOSR_AgentOverride_BookingCancellationDetails").ToString.Split("|"c)(3)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MultipleAssign>
+    <ba:XREZ___Agent_Override_Page___Select_Adjustment_Type DisplayName="Select Adjustment Type - Decrease price (Remove payment due)" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="XREZ___Agent_Override_Page___Select_Adjustment_Type_1" in_StrAdjustmentType="[strAdjustmentType]" />
+    <ba:XREZ___Agent_Override_Page___Type_Into_Reason DisplayName="Agent Override Page - Type Into Reason  (Remove payment due)" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="XREZ___Agent_Override_Page___Type_Into_Reason_1" in_StrReason="[strCancellationReason]" />
+    <ba:XREZ___Agent_Override_Page___Select_Component DisplayName="Agent Override Page - Select Component  (Remove payment due)" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="XREZ___Agent_Override_Page___Select_Component_1" in_StrComponent="[strCancellationComponent]" />
+    <ba:XREZ___Agent_Override_Page___Select_Reason_Code DisplayName="Agent Override Page - Select Reason Code  (Remove payment due)" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="XREZ___Agent_Override_Page___Select_Reason_Code_1" in_StrReasonCode="[strReasonCode]" />
+    <ba:XREZ___Agent_Override_Page___Type_Into_Amount sap2010:Annotation.AnnotationText="If the process was not able to extract Total Balance Due, it should use the previously extracted payment due" DisplayName="Agent Override Page - Type Into Amount  (Remove payment due)" sap:VirtualizedContainerService.HintSize="434,132" sap2010:WorkflowViewState.IdRef="XREZ___Agent_Override_Page___Type_Into_Amount_3" in_DblDifferenceAmount="[If(dblTotalBalanceDue = 0, in_dblPaymentDue, dblTotalBalanceDue)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ba:XREZ___Agent_Override_Page___Type_Into_Amount>
+    <ui:LogMessage DisplayName="Log Message - details are filled" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Details have been filled. Updating pricing...&quot;]" />
+    <ba:XREZ___Agent_Override_Page___Click_Update_Pricing DisplayName="Agent Override Page - Click Update Pricing" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="XREZ___Agent_Override_Page___Click_Update_Pricing_1" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" />
+    <ui:LogMessage DisplayName="Log Message - Agent Override - Commit" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Click commit..&quot;]" />
+    <ba:XREZ___Agent_Override_Page___Click_Commit DisplayName="Agent Override Page - Click Commit" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="XREZ___Agent_Override_Page___Click_Commit_1" in_DblDelay="[Convert.ToDouble(in_dictConfig(&quot;dblDelay&quot;))]" in_DblTimeout="[Convert.ToDouble(in_dictConfig(&quot;dblTimeout&quot;))]" />
+    <ui:LogMessage DisplayName="Log Message - End Agent Override" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Payment override in 'Agent Override' section has been completed&quot;]" />
+  </Sequence>
+</Activity>
